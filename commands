@@ -1,0 +1,5 @@
+trivy image -f json -o narender.json narender046/myapp:1.0  
+
+trivy image --format template --template "@junit.tpl" -o narender-report.xml  narender046/myapp:1.0
+
+trivy image --format template --template "@html.tpl" -o narender-report.html  narender046/myapp:1.0
